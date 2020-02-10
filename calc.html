@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title> Calculator </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="calc">
+        
+            <div id="result"> <form> <input id="output" type="text" autocomplete='off' value="0" disabled> </form> </div>
+
+            <div id="menu">
+                
+                <div class="row">
+                    <input class="gray_btn" type="button" value="AC" onclick="ac()">
+                    <input class="gray_btn" type="button" value="+-">
+                    <input class="gray_btn" type="button" value="%" >
+                    <input class="orng_btn" type="button" value="/" onclick="count(this.value)">
+                </div>
+    
+                <div class="row">
+                    <input class="dgray_btn" type="button" value="7" onclick="insert(this.value)">
+                    <input class="dgray_btn" type="button" value="8" onclick="insert(this.value)">
+                    <input class="dgray_btn" type="button" value="9" onclick="insert(this.value)">
+                    <input class="orng_btn" type="button" value="x" onclick="count(this.value)">
+                </div>
+    
+                <div class="row">
+                    <input class="dgray_btn" type="button" value="4" onclick="insert(this.value)">
+                    <input class="dgray_btn" type="button" value="5" onclick="insert(this.value)">
+                    <input class="dgray_btn" type="button" value="6" onclick="insert(this.value)">
+                    <input class="orng_btn" type="button" value="-" onclick="count(this.value)">
+                </div>
+    
+                <div class="row">
+                    <input class="dgray_btn" type="button" value="1" onclick="insert(this.value)">
+                    <input class="dgray_btn" type="button" value="2" onclick="insert(this.value)">
+                    <input class="dgray_btn" type="button" value="3" onclick="insert(this.value)">
+                    <input class="orng_btn" type="button" value="+" onclick="count(this.value)">
+                </div>
+    
+                <div class="row">
+                    <input class="dgray_btn" id="zero" type="button" value="0" onclick="insert(this.value)">
+                    
+                    <input class="dgray_btn" type="button" value="." onclick="insert(this.value)">
+                    <input class="orng_btn" type="button" value="=" onclick="show_output()" >
+                </div>
+
+            </div>
+            
+
+        </div>
+        <script src="skrypt.js"></script>
+    </body>
+</html>
